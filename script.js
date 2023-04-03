@@ -44,10 +44,11 @@ playerSelection();
 // // -------------- Play the game, change text ---------------------
 function playRound() {
   computerSelection = getComputerChoice();
+  const winner = ["You won the game!", "You lost the game!"];
 
   if (playerSelection === computerSelection) {
     // return "Tie";
-    document.getElementById('result').innerHTML = `Tie! you both choose ${playerSelection}...`;
+    document.getElementById('result').innerHTML = `Tie! you both choose: ${playerSelection.toUpperCase()}`;
     document.getElementById('result').style.color = "#000";
     gameOverSounds();
   }
@@ -60,9 +61,7 @@ function playRound() {
     gameOverSounds();
     stopGame();
     if (playerScore == 3) {
-      document.getElementById('result').innerHTML = "Game over! Press reset to play again.";
-      document.getElementById('result').style.color = "#fccb06";
-      document.getElementById("bannerAnounce").innerHTML = "You won the game!";
+      document.getElementById("bannerAnounce").innerHTML = winner[0];
       document.getElementById("bannerAnounce").style.backgroundColor = "#23C552";
     }
   }
@@ -75,9 +74,7 @@ function playRound() {
     gameOverSounds();
     stopGame();
     if (computerScore == 3) {
-      document.getElementById('result').innerHTML = "Game over! Press reset to play again.";
-      document.getElementById('result').style.color = "#fccb06";
-      document.getElementById("bannerAnounce").innerHTML = "You lost the game!";
+      document.getElementById("bannerAnounce").innerHTML = winner[1]
       document.getElementById("bannerAnounce").style.backgroundColor = "#F84F31";
     }
   }
@@ -105,6 +102,8 @@ gameOverSounds();
 // // -------------- Stop the game / Disable buttons-weapons ---------------------
 function stopGame() {
   if ((playerScore == 3) || (computerScore == 3)) {
+    document.getElementById('result').style.color = "#fccb06";
+    document.getElementById('result').innerHTML = "Game over! Press reset to play again.";
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
