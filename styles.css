@@ -75,7 +75,7 @@ select {
 
 body {
 	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-	background: #ffffff;
+	background: url(img/background.jpeg);
 	text-align: center;
 	color: #ffffff;
 }
@@ -89,6 +89,7 @@ body {
 
 .rules a:hover {
 	letter-spacing: 5px;
+	transform: translateY(10px);
 }
 
 #banner img {
@@ -103,9 +104,8 @@ body {
 	background: #fccb06;
 	border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-		rgba(245, 243, 243, 0.492) 0px -12px 30px,
-		rgba(246, 242, 242, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
-		rgba(255, 255, 255, 0.366) 0px -3px 5px;
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #bannerAnounce {
@@ -117,6 +117,7 @@ body {
 	background: #ffffff;
 	padding: 5px;
 	margin: 5px auto;
+	transition-duration: 0.5s;
 }
 
 #buttonReset {
@@ -164,31 +165,42 @@ body {
 }
 
 .weapons {
-	padding: 5px 10px;
-	margin: 0 auto 50px;
+	margin: 30px auto;
 }
 
 .weapons button {
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	color: #ffffff;
 	background: #1d63ff;
 	border: none;
-	padding: 5px 15px;
 	transition-duration: 0.3s;
 }
 
 .weapons button:hover {
 	color: #000;
+	opacity: 95%;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #rock {
-	border-radius: 10px 0 0 10px;
-	margin: 0 10px;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin-right: 5%;
+}
+#paper {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
 }
 
 #scissors {
-	border-radius: 0 10px 10px 0;
-	margin: 0 10px;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin-left: 5%;
 }
 
 .footer {
@@ -261,11 +273,35 @@ body {
 		padding: 1% 2% 1% 2%;
 	}
 }
-/* ---------- Use a media query to add a breakpoint at 400px ----------- */
-@media screen and (max-width: 400px) {
+/* ---------- Use a media query to add a breakpoint at 415px ----------- */
+@media screen and (max-width: 415px) {
+	body {
+		background: #fccb06;
+	}
 	.main {
-		width: 90%;
-		margin: 30px auto 10px;
+		width: 100%;
+		height: 000px;
+		margin: 10px auto;
 		padding: 1% 2% 1% 2%;
+	}
+	#result {
+		margin: 30px;
+	}
+	.score {
+		margin: 20px;
+	}
+	#rock {
+		height: 70px;
+	}
+	#paper {
+		height: 70px;
+	}
+	#scissors {
+		height: 70px;
+	}
+	.weapons button:hover {
+		color: #000;
+		opacity: 95%;
+		box-shadow: none;
 	}
 }
