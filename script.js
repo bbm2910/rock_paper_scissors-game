@@ -23,16 +23,19 @@ let playerSelection = () => {
 
   const rock = document.getElementById("rock").onclick = () => {
     playerSelection = choice[0];
+    weapon.currentTime = 0;
     playRound();
     weapon.play();
   };
   const paper = document.getElementById("paper").onclick = () => {
     playerSelection = choice[1];
+    weapon.currentTime = 0;
     playRound();
     weapon.play();
   };
   const scissors = document.getElementById("scissors").onclick = () => {
     playerSelection = choice[2];
+    weapon.currentTime = 0;
     playRound();
     weapon.play();
   };
@@ -87,7 +90,7 @@ playRound();
 // // -------------- Play sounds at the end of the game ---------------------
 function gameOverSounds() {
   const playerWon = new Audio("sounds/playerWon.mp3");
-  const computerWon = new Audio("sounds/computerWon.mp3")
+  const computerWon = new Audio("sounds/computerWon.mp3");
 
   if (playerScore == 3) {
     playerWon.play();
