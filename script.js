@@ -104,12 +104,19 @@ gameOverSounds();
 
 // // -------------- Stop the game / Disable buttons-weapons ---------------------
 function stopGame() {
+  const main = document.querySelector(".main");
+
+
+
   if ((playerScore == 3) || (computerScore == 3)) {
     document.getElementById('result').style.color = "#fccb06";
     document.getElementById('result').innerHTML = "Game over! Press reset to play again.";
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
+    main.classList.add("game-done");
+
+
   }
 }
 stopGame();

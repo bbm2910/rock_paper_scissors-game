@@ -217,6 +217,10 @@ body {
 	letter-spacing: 5px;
 }
 
+.game-done {
+	opacity: 80%;
+}
+
 /* ---------- Use a media query to add a breakpoint at 1200px ----------- */
 @media screen and (max-width: 1200px) {
 	.main {
