@@ -1,4 +1,4 @@
-# Rock-Paper-Scissors-GAME
+# Rock-Paper-Scissors
 Made with HTML, CSS and JavaScript.
 Rock Paper Scissors Game is a simple web-based implementation of the classic game "Rock, Paper, Scissors." It allows two players to compete against each other and determine the winner based on their choices.
 Features
