@@ -1,4 +1,4 @@
-# Rock-Paper-Scissors
+# rock_paper_scissors-game
 ![My Image](Screenshot.png)
 
 ## [Demo](https://bbm2910.github.io/rock_paper_scissors-game/)
