@@ -1,7 +1,7 @@
 # Rock-Paper-Scissors
 ![My Image](Screenshot.png)
 
-## [Demo](https://bbm2910.github.io/Rock-Paper-Scissors-GAME/)
+## [Demo](https://bbm2910.github.io/rock_paper_scissors-game/)
 
 
 Made with HTML, CSS and JavaScript.
