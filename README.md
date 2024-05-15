@@ -1,4 +1,9 @@
 # Rock-Paper-Scissors
+![My Image](Screenshot.png)
+
+## [Demo](https://bbm2910.github.io/Rock-Paper-Scissors-GAME/)
+
+
 Made with HTML, CSS and JavaScript.
 Rock Paper Scissors Game is a simple web-based implementation of the classic game "Rock, Paper, Scissors." It allows two players to compete against each other and determine the winner based on their choices.
 Features
@@ -15,8 +20,7 @@ A modern web browser that supports HTML5 and JavaScript.
 ## Getting Started
 To get started with the Rock Paper Scissors Game, follow these steps:
 
-### Clone or download the repository 
-https://github.com/bobby2910/Rock-Paper-Scissors-GAME.
+### Clone or download the [repository](https://github.com/bobby2910/Rock-Paper-Scissors-GAME)
 Navigate to the project directory.
 Open the index.html file in a web browser.
 
