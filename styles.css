@@ -307,14 +307,20 @@ body {
 	.main {
 		width: 100%;
 		box-shadow: none;
-		margin: 10px auto;
-		padding: 1% 2% 1% 2%;
+		/* margin: 10px auto; */
+		/* padding: 1% 2% 1% 2%; */
+	}
+	#banner{
+		margin-bottom: 60px;
 	}
 	#result {
-		margin: 30px;
+		width: 70%;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 60px;
 	}
 	.score {
-		margin: 20px;
+		margin: 60px;
 	}
 	#rock {
 		height: 70px;
